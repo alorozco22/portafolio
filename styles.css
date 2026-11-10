@@ -200,13 +200,45 @@ p:last-child {
 }
 
 .section-index {
-  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  max-width: 100%;
+  margin-bottom: 1.15rem;
+  padding: 0.42rem 0.78rem 0.38rem;
+  border: 1px solid rgba(12, 91, 99, 0.24);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.68rem;
+  line-height: 1.2;
+}
+
+.section-index__number {
   color: var(--accent);
-  font-size: 0.71rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.section-index__divider {
+  color: var(--line-strong);
+  font-weight: 500;
 }
 
 .section-index--light {
-  color: rgba(255, 255, 255, 0.66);
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+}
+
+.section-index--light .section-index__number {
+  color: var(--white);
+}
+
+.section-index--light .section-index__divider {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .kicker {
